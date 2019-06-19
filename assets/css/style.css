@@ -107,3 +107,18 @@ background: rgb(245,246,246); /* Old browsers */
     font-weight: 800;
 }
 
+.navButtons{
+    text-align:center;
+    list-style: none;
+    float:right;
+    padding-right:40px;
+    padding-top:20px;
+}
+.navButton{
+    width:50px;
+    display:inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color:silver;
+    
+}
