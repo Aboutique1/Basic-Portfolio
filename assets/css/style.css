@@ -58,7 +58,7 @@ nav{
 }
 .footer{
     width: 100%;
-    height: 50px;
+    height: 40px;
     position: fixed;
     bottom: 0; 
     display: block;
@@ -67,7 +67,7 @@ nav{
 
 }
 .bigContentText{
-    color: teal;
+    color: #4aaaa5;
     font-size: 26px;
     font-weight: 800;
 }
@@ -77,7 +77,7 @@ nav{
    right:8px;
     height: 3px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
-background: rgb(245,246,246); /* Old browsers */
+background: rgb(211, 211, 211); /* Old browsers */
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -137,15 +137,38 @@ background: rgb(245,246,246); /* Old browsers */
 
 
 .nameAndEmailInput{
-    width: 932px;
-
+    width: 97.5%;
+    height: 25px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    margin-top:5px;
+    color: grey;
 
 }
 
 #message{
-    width: 932px;
-    height:200px;
-    
+    height:180px;
+    width:97.5%;
+    border: 1px solid #dddddd;
+
 
 
 }
+
+input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+    margin-top:15px;
+  }
+  
+  .contactLabel{
+      font-family: Arial, Helvetica, sans-serif;
+      color: #a9a9a9;
+      margin-bottom: 6px;
+      font-size: 18px;
+      
+  }
