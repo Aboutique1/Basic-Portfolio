@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<body id="contact">
     <div class="navContainer mainHeader">
             <nav class="navContent">
-                <div class="yourName">
+                <a class="yourName" href="index.html">
                     <p class="yourNameText">
                         Amber Webb
                     </p>
-                </div>
+                </a>
 
                 <ul class="navButtons">
                     <li class="navButton">
@@ -22,7 +22,7 @@
                         About
                         </a>
                     </li>
-                    <li class="navButton">
+                    <li class="navButtonExclude">
                         |
                     </li>
                     <li class="navButton">
@@ -30,11 +30,11 @@
                         Portfolio
                         </a>
                     </li>
-                    <li class="navButton">
+                    <li class="navButtonExclude">
                         |
                     </li>
                     <li class="navButton">
-                        <a class="navButton" href="#">
+                        <a class="navButton" id="contactnav" href="#">
                         Contact
                         </a>
                     </li>
@@ -49,14 +49,14 @@
        </p>
        <div class="horizontalLine"></div>
 
-        <form>
+        <form onsubmit="submitted()">
             <label class="contactLabel" for="name">Name</label><br>
             <input id="name" class="nameAndEmailInput" /><br><br>
             <label class="contactLabel" for="email">Email</label><br>
             <input id="email" class="nameAndEmailInput" /><br><br>
             <label class="contactLabel" for="message">Message</label><br>
             <textarea id="message" class="nameAndEmailInput"  ></textarea><br>
-            <input id="submitButton"  type="submit"/>
+            <input id="submitButton" class=""  type="submit" value="Submit" />
         </form>
 
        
@@ -70,6 +70,24 @@
     
 
 
-    
+    <script>
+function getPlatformType() {
+	if(navigator.userAgent.match(/mobile/i)) {
+		return 'Mobile Phone';
+	} else if (navigator.userAgent.match(/iPad|Android|Touch/i)) {
+		return 'Tablet';
+	} else {
+		return 'Desktop Computer';
+	}
+}
+
+   function submitted() {
+    button = document.getElementById('submitButton')
+    button.addEventListener('click', function (event) {
+    button.classList.toggle('button-active')
+  }) 
+  alert(`Your ${getPlatformType()} is infected with a virus!`);
+}
+    </script>
 </body>
 </html>
